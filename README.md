@@ -1,7 +1,7 @@
 # FitMe
 A simple website that provides workout recommendations, nutrition info, wellness tips amd BMI calculator.
 
-Features-
+##Features-
 
 -> Workout Recommendations: Explore fitness routines.
 
