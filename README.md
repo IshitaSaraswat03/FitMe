@@ -1,7 +1,8 @@
 # FitMe
 (Fitness and Health Guide Website)
 
-![Website Screenshot](screenshot.png)
+![Website Screenshot]![image](https://github.com/IshitaSaraswat03/FitMe/assets/120635713/e4d2d46e-f122-4a92-8b8b-67027a8e904d)
+
 
 Welcome to the FitMe. This website provides valuable information and resources to help users achieve their fitness and health goals.
 
