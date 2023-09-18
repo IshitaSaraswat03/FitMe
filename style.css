@@ -1,0 +1,710 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  height: 60px;
+  background-color: #498b39;
+}
+
+label.logo {
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+  line-height: 55px;
+  padding-left: 80px;
+  font-weight: bold;
+}
+
+nav ul {
+  float: right;
+  margin-right: 80px;
+  display: flex;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  line-height: 60px;
+  padding: 0 20px;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+  background-color: #aab732;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.home {
+  display: flex;
+  flex-direction: row;
+  background-color: #ebf1bd;
+}
+
+.home-image {
+  background-image: url("images/2.jpg");
+  background-size: cover;
+  width: 50%;
+  height: 600px;
+  animation: fadeIn 2s ease-in-out;
+}
+.home-image:hover {
+  filter: grayscale(100%);
+}
+
+.home-text {
+  padding: 40px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.home-text h1 {
+  text-align: center;
+  align-self: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.home-text p {
+  font-size: 25px;
+  line-height: 1.5;
+  margin-bottom: 2px;
+  color: #555;
+  font-weight: 300;
+  font-family: "Open Sans", sans-serif;
+}
+
+.overview {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.overview h2 {
+  font-size: 36px;
+  padding: 30px;
+  background-color: rgb(233, 233, 232);
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.overview span {
+  display: inline;
+  font-size: 36 px;
+  color: #498b39;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.quote {
+  text-align: center;
+}
+
+.quote h3 {
+  display: inline;
+  font-size: 22px;
+  font-style: italic;
+  color: #498b39;
+  margin-bottom: 10px;
+}
+.quote-image {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 90px;
+}
+
+.quote-image img {
+  max-width: 35%;
+  max-height: 100%;
+  object-fit: contain;
+  margin-right: 40px;
+  border: 5px solid #498b39;
+  animation: fadeIn 2s ease-in-out;
+  animation-delay: 2s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.summary p {
+  position: absolute;
+  top: 900px;
+  margin-left: 40px;
+  padding: 20px 0;
+  line-height: 1.8;
+  font-size: 20px;
+  color: #333;
+}
+.workout {
+  text-align: center;
+  margin-top: 700px;
+}
+
+.workout h2 {
+  font-size: 200px;
+  text-align: center;
+  padding: 100px;
+  background-image: url(images/workout.png);
+  background-attachment: fixed;
+  opacity: 0.7;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.workout h1 {
+  margin-top: 40px;
+  font-size: 35px;
+  margin-bottom: 40px;
+}
+
+.workout-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.workout-list div {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgb(90, 92, 89);
+  position: relative;
+  overflow: hidden;
+}
+
+.workout-list div:hover {
+  animation: workout-box 0.3s ease-in-out;
+}
+
+.workout-list div img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.workout-list div h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.workout-list div p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+@keyframes workout-box {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.nutrition {
+  margin-top: 150px;
+  position: relative;
+  height: 400px;
+}
+.nutrition h2 {
+  font-size: 250px;
+  text-align: center;
+  padding: 60px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
+  opacity: 1;
+}
+.nutrition-bg {
+  background-image: url(images/nutrition.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  opacity: 0.9;
+}
+.nutrition-bg h3 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 30px;
+}
+
+.nutrition-bg p {
+  margin-left: 40px;
+  margin-right: 90px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+.nutrition b {
+  font-weight: 700;
+}
+
+.macro {
+  margin-bottom: 30px;
+}
+
+.macro h4 {
+  margin-left:40px;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
+}
+
+.macro p {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.macro-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:30px;
+  margin-top: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.macro-item {
+  flex: 1 0 300px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.macro-item h5 {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+
+.macro-item img {
+  padding:30px;
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.macro-item p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  margin-left: 80px;
+}
+
+.micro {
+  margin-bottom: 30px;
+}
+
+.micro h4 {
+  margin-top: 40px;
+  margin-left: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
+}
+
+.micro p {
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  margin-bottom: 0.5px;
+  margin-right: 10px;
+}
+
+.micro-content {
+  display: flex;
+  justify-content: space-between;
+  gap:50px;
+}
+
+.micro-item {
+  flex: 1 0 40%;
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.micro-item h4 {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 30px;
+}
+
+.micro-item img {
+  max-width: 100%;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+.micro-item p {
+  margin-left: 75px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+}
+
+.wellness {
+  margin-top: 2500px;
+  position: relative;
+  height: auto;
+}
+
+.wellness h2 {
+  font-size: 200px;
+  text-align: center;
+  padding: 60px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
+  opacity: 1;
+}
+
+.wellness-bg {
+  background-image: url(images/wellness.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: auto;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.wellness-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 50px;
+  padding: 40px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wellness-info {
+  flex-basis: 50%;
+  margin-left: 300px;
+}
+
+.wellness-info h5 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #8a8585;
+}
+
+.wellness-info ul {
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  line-height: 1.5;
+}
+
+.wellness-info li {
+  list-style-type: disc;
+  margin-bottom: 10px;
+}
+
+.wellness-content img {
+  width: 40%;
+  height: auto;
+  margin-left: 40px;
+}
+.intro p{
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-right: 40px;
+  font-size:25px;
+}
+
+.box {
+  margin-top:90px;
+  margin-left:500px;
+  margin-bottom: 100px;
+  width: 500px;
+  background: #fafafa;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 2px 2px 20px 5px rgba(0,0,0,0.5);
+}
+h1 {
+  color: rgb(0, 0, 0, 0.7);
+  font-weight: bold;
+  font-size: 36px;
+  padding: 30px 0;
+}
+.content {
+  padding: 0 30px;
+}
+
+.input {
+  background: #fff;
+  box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.input label {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.input input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgb(15, 198, 140);
+  width: 50%;
+  text-align: center;
+  font-size: 28px;
+  font-family: "Nunito", sans-serif;
+}
+
+.inputW {
+  background: #fff;
+  box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.inputW label {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.inputW input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgb(15, 198, 140);
+  width: 50%;
+  text-align: center;
+  font-size: 28px;
+  font-family: "Nunito", sans-serif;
+}
+
+.inputH {
+  background: #fff;
+  box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.inputH label {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 20px;
+}
+.inputH input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgb(15, 198, 140);
+  width: 50%;
+  text-align: center;
+  font-size: 28px;
+  font-family: "Nunito", sans-serif;
+}
+
+button.calculate {
+cursor: pointer;
+font-family: "Nunito", sans-serif;
+color: #fff;
+background: rgb(15, 198, 140);
+font-size: 16px;
+border-radius: 7px;
+padding: 12px 0;
+width: 100%;
+outline: none;
+border: none;
+transition: all 0.5s;
+}
+
+button.calculate:hover {
+background: rgb(15, 198, 140);;
+}
+
+.result {
+padding: 10px 20px;
+}
+.result p {
+font-weight: 600;
+font-size: 22px;
+color: #000;
+margin-bottom: 15px;
+}
+.result #result {
+font-size: 36px;
+font-weight: 900;
+color: rgb(15, 198, 140);;
+background-color: #eaeaea;
+display: inline-block;
+padding: 7px 20px;
+border-radius: 55px;
+margin-bottom: 25px;
+}
+#comment {
+color: rgb(15, 198, 140);;
+font-weight: 800;
+}
+
+.comment {
+display: none;
+border: dashed 1px;
+border-radius: 7px;
+padding: 5px;
+}
+.gender {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  background: #fff;
+  box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+.gender .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-top: 7px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.gender .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.gender .container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.gender .container input:checked ~ .checkmark {
+  background-color:rgb(15, 198, 140);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.gender .container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.gender .container .checkmark:after {
+     top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+.containerHW {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
