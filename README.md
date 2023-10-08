@@ -5,7 +5,7 @@ Welcome to the FitMe. This website provides valuable information and resources t
 
 ![Website Screenshot](https://github.com/IshitaSaraswat03/FitMe/assets/120635713/e4d2d46e-f122-4a92-8b8b-67027a8e904d)
 
-Visit the live website: [Fitness and Health Guide](https://your-website-url.com)
+Visit the live website: [Fitness and Health Guide](https://ishitasaraswat03.github.io/FitMe/)
 
 ## Introduction
 
